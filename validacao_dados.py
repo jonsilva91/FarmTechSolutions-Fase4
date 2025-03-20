@@ -32,6 +32,18 @@ def entrada_float_opcional(mensagem, valor_atual):
                 print("O valor não pode ser negativo!")
         except ValueError:
             print("Entrada inválida! Digite um número válido ou pressione Enter para manter o valor atual.")
+            
+def entrada_float_intervalo(mensagem, minimo, maximo):
+    """Garante que a entrada seja um número float dentro de um intervalo específico."""
+    while True:
+        try:
+            valor = float(input(mensagem))
+            if minimo <= valor <= maximo:
+                return valor
+            else:
+                print(f"O valor deve estar entre {minimo} e {maximo}!")
+        except ValueError:
+            print("Entrada inválida! Digite um número válido.")
 
 def entrada_yn(mensagem):
     """Garante que a entrada seja 'y' ou 'n'."""

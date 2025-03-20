@@ -50,7 +50,7 @@ def entrada_dados():
              }
     else:
             if adubacao == 'y':
-                produtividade_adubacao = entrada_float("Informe a estimativa de produção(toneladas/ha): ")
+                produtividade_adubacao = entrada_float_intervalo("Informe a estimativa de produção (toneladas/ha): ", 5, 15)
                 tipo_milho = entrada_opcao("Informe a finalidade da plantação do milho (grão ou silagem): ", ["grao", "silagem"])
                 n, p2o5, k2o = calcular_adubo_milho(produtividade_adubacao, tipo_milho)
         
@@ -196,7 +196,7 @@ def atualizar_dados():
                 estimativa_producao = entrada_float_opcional(f"Nova estimativa de produção (t/ha) (Atual: {dados[indice]['insumos']['adubacao']['estimativa_producao']}): ",dados[indice]['insumos']['adubacao']['estimativa_producao'])
 
                 # Recalcular adubação com os novos valores
-                p2o5_total, k2o_total = calcular_adubo_soja(estimativa_producao, p_resina, k_trocavel, area)
+                p2o5_total, k2o_total = calcular_adubo_soja(estimativa_producao, p_resina, k_trocavel)
 
                 dados[indice]['insumos']['adubacao'].update({
                     "p_resina": p_resina,
@@ -246,8 +246,8 @@ def atualizar_dados():
                 })
 
             # Atualizar dados gerais
-            germinacao = entrada_float_opcional(f"Novo poder germinativo das sementes (%): (Atual: {dados[indice]['germinacao']}): ",dados[indice]['germinacao'])
-            peso_mil_graos = entrada_float_opcional(f"Novo peso por mil grãos (g): (Atual: {dados[indice]['peso_mil_graos']}):  ",dados[indice]['peso_mil_graos'])
+            germinacao = entrada_float(f"Novo poder germinativo das sementes (%):")
+            peso_mil_graos = entrada_float(f"Novo peso por mil grãos (g):")
             
 
             produtividade_opcao = entrada_yn("Gostaria de recalcular a produtividade esperada? (Y/N) ").strip().lower()
@@ -278,8 +278,6 @@ def atualizar_dados():
                 "taxa_semeadura": taxa_semeadura,
                 "peso_por_hectare": peso_por_hectare,
                 "produtividade": produtividade,
-                "germinacao": germinacao,
-                "peso_mil_graos": peso_mil_graos
             })
 
             salvar_dados()
@@ -296,17 +294,23 @@ def deletar_dados():
         print("\nNenhum dado para remover.\n")
         return
 
-    print("\nDados cadastrados:")
+    print("\nDados cadastrados:\n")
     for i, d in enumerate(dados):
         print(f"[{i}] Cultura: {d['cultura']}, Área: {d['area']:.2f} hectares")
 
-    try:
-        indice = int(input("Digite o índice do dado a ser removido: "))
-        if 0 <= indice < len(dados):
-            removido = dados.pop(indice)
-            salvar_dados()
-            print(f"Dado removido com sucesso! Cultura: {removido['cultura']}, Área: {removido['area']:.2f} hectares\n")
-        else:
-            print("Índice inválido!\n")
-    except ValueError:
-        print("Entrada inválida! Digite um número.\n")
+    entrada = entrada_opcao("\nDigite o índice do dado a ser removido (ou 'V' para voltar): ", 
+                            [str(i) for i in range(len(dados))] + ['v'])
+
+    if entrada == 'v':
+        print("\nOperação cancelada. Nenhum dado foi removido.\n")
+        return
+
+    indice = int(entrada)
+    confirmacao = entrada_yn(f"\nTem certeza que deseja remover '{dados[indice]['cultura']}'? (Y/N): ")
+
+    if confirmacao == 'y':
+        removido = dados.pop(indice)
+        salvar_dados()
+        print(f"\nDado removido com sucesso! Cultura: {removido['cultura']}, Área: {removido['area']:.2f} hectares\n")
+    else:
+        print("\nRemoção cancelada.\n")

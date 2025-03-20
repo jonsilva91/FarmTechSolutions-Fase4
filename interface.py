@@ -33,7 +33,7 @@ def menu():
             except Exception as e:
                 print(f"Erro ao deletar dados: {e}")
         elif opcao == '5':
-            print("Saindo do programa...")
+            print("\nSaindo do programa...\n")
             break
         else:
-            print("Opção inválida. Escolha um número entre 1 e 5.")
+            print("\nOpção inválida. Escolha um número entre 1 e 5.\n")

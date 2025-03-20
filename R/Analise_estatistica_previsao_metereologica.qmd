@@ -1,0 +1,130 @@
+---
+title: "Análise de Dados de Culturas"
+author: "Jonas Silva, João Severo e Renan"
+output: html_document
+---
+
+## Introdução
+
+Este relatório apresenta a análise de dados das culturas de soja e milho, incluindo informações sobre áreas, densidade de semeadura, produtividade e insumos utilizados.
+
+### Carregar os pacotes JSON e DPLYR
+
+```{r}
+library(jsonlite)
+library(dplyr)
+```
+
+### Carregar os dados JSON
+
+```{r}
+dados <- fromJSON("../data/dados.json")
+```
+
+### Converter dados de produtividade em NA
+
+```{r}
+dados <- dados %>%
+  mutate(produtividade = as.numeric(produtividade))
+```
+
+### Visualizar os dados
+
+```{r}
+head(dados)
+```
+
+## Estatísticas Básicas:
+
+### Filtrar dados relevantes
+
+```{r}
+dados_soja <- dados %>% filter(cultura == "soja")
+dados_milho <- dados %>% filter(cultura == "milho")
+```
+
+```{r}
+head(dados_soja)
+```
+
+```{r}
+head(dados_milho)
+```
+
+### Calcular as médias de área e produtividade
+
+```{r}
+media_area_soja <- mean(dados_soja$area, na.rm = TRUE)
+
+media_produtividade_soja <- mean(as.numeric(dados_soja$produtividade), na.rm = TRUE)
+
+media_area_milho <- mean(dados_milho$area, na.rm = TRUE)
+
+media_produtividade_milho <- mean(as.numeric(dados_milho$produtividade), na.rm = TRUE)
+```
+
+### Exibir Médias
+
+```{r}
+cat("Média da área de soja:",media_area_soja,"\n")
+cat("Média da produtividade de soja:",media_produtividade_soja,"\n")
+cat("Média da área de milho:",media_area_milho,"\n")
+cat("Média da produtividade de milho:",media_produtividade_milho,"\n")
+```
+
+### Calcular os desvios de área e produtividade
+
+```{r}
+desvio_area_soja <- sd(dados_soja$area, na.rm = TRUE)
+desvio_produtividade_soja <- sd(as.numeric(dados_soja$produtividade), na.rm = TRUE)
+
+desvio_area_milho <- sd(dados_milho$area, na.rm = TRUE)
+
+desvio_produtividade_milho <- sd(as.numeric(dados_milho$produtividade), na.rm = TRUE)
+```
+
+### Exibir Desvios
+
+```{r}
+cat("Desvio padrão da área de soja:",desvio_area_soja,"\n")
+cat("Desvio padrão da produtividade de soja:",desvio_produtividade_soja,"\n")
+cat("Desvio padrão da área de milho:",desvio_area_milho,"\n")
+cat("Desvio padrão da produtividade de milho:",desvio_produtividade_milho,"\n")
+```
+
+### Calcular as médias de insumos para Soja
+
+```{r}
+media_fungicida_ha_soja <- mean(dados_soja$insumos$fungicida$fungicida_ha, na.rm = TRUE)
+media_total_fungicida_soja <- mean(dados_soja$insumos$fungicida$total_fungicida, na.rm = TRUE)
+media_p2o5_soja <- mean(dados_soja$insumos$adubacao$p2o5_total, na.rm = TRUE)
+media_k2o_soja <- mean(dados_soja$insumos$adubacao$k2o_total, na.rm = TRUE)
+```
+
+### Calcular as médias de insumos para Milho
+
+```{r}
+media_fungicida_ha_milho <- mean(dados_milho$insumos$fungicida$fungicida_ha, na.rm = TRUE)
+media_total_fungicida_milho <- mean(dados_milho$insumos$fungicida$total_fungicida, na.rm = TRUE)
+media_nitrogenio_milho <- mean(dados_milho$insumos$adubacao$nitrogênio, na.rm = TRUE)
+media_fosforo_milho <- mean(dados_milho$insumos$adubacao$fósforo, na.rm = TRUE)
+media_potassio_milho <- mean(dados_milho$insumos$adubacao$potássio, na.rm = TRUE)
+```
+
+### Exibir Médias dos Insumos
+
+```{r}
+cat("\n### Médias dos Insumos - Soja ###\n")
+cat("Média de fungicida aplicado por hectare:", media_fungicida_ha_soja, "L/ha\n")
+cat("Média total de fungicida aplicado:", media_total_fungicida_soja, "L\n")
+cat("Média total de P2O5 aplicado:", media_p2o5_soja, "kg/ha\n")
+cat("Média total de K2O aplicado:", media_k2o_soja, "kg/ha\n")
+
+cat("\n### Médias dos Insumos - Milho ###\n")
+cat("Média de fungicida aplicado por hectare:", media_fungicida_ha_milho, "L/ha\n")
+cat("Média total de fungicida aplicado:", media_total_fungicida_milho, "L\n")
+cat("Média de Nitrogênio aplicado:", media_nitrogenio_milho, "kg/ha\n")
+cat("Média de Fósforo aplicado:", media_fosforo_milho, "kg/ha\n")
+cat("Média de Potássio aplicado:", media_potassio_milho, "kg/ha\n")
+
+```
