@@ -6,7 +6,7 @@ def calcular_area():
     print("\n Escolha a forma do campo para calcular a área:")
     print("1 - Retângulo\n2 - Círculo\n3 - Triângulo\n4 - Trapézio\n5 - Personalizado")
     
-    escolha = entrada_opcao("Digite o número da forma geométrica: ", ["1", "2", "3", "4"])
+    escolha = entrada_opcao("Digite o número da forma geométrica: ", ["1", "2", "3", "4","5"])
 
     if escolha == "1":
         base = float(input("Digite a largura/base da área (m): "))

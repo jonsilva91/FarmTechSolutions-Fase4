@@ -202,5 +202,23 @@
                 "total_fungicida": 23.75
             }
         }
+    },
+    {
+        "cultura": "soja",
+        "area": 55000.0,
+        "densidade": 12.0,
+        "espacamento": 0.4,
+        "taxa_semeadura": 15.0,
+        "peso_por_hectare": 82500.00000000001,
+        "produtividade": "N\u00e3o foi previsto produtividade para essa cultura",
+        "insumos": {
+            "fungicida": {
+                "nome": "Morfolina",
+                "dosagem": 14.999999999999998,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 29.999999999999996,
+                "total_fungicida": 27500.0
+            }
+        }
     }
 ]
