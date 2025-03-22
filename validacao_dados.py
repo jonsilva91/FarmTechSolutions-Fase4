@@ -11,10 +11,10 @@ def entrada_float(mensagem):
     while True:
         try:
             valor = float(input(mensagem))
-            if valor >= 0:  # Evita valores negativos se necessário
+            if valor > 0:  # Evita valores negativos se necessário
                 return valor
             else:
-                print("O valor não pode ser negativo!")
+                print("O valor não pode ser negativo ou zero!")
         except ValueError:
             print("Entrada inválida! Digite um número válido.")
 
@@ -26,10 +26,10 @@ def entrada_float_opcional(mensagem, valor_atual):
             return valor_atual  # Mantém o valor atual
         try:
             valor = float(entrada)
-            if valor >= 0:  # Se necessário, evitar números negativos
+            if valor > 0:  # Se necessário, evitar números negativos
                 return valor
             else:
-                print("O valor não pode ser negativo!")
+                print("O valor não pode ser negativo ou zero!")
         except ValueError:
             print("Entrada inválida! Digite um número válido ou pressione Enter para manter o valor atual.")
             

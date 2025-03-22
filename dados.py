@@ -67,10 +67,10 @@ def entrada_dados():
     nome_produto = input("Qual o produto que será aplicado? ")
     velocidade = entrada_float("Qual a velocidade média percorrida pelo pulverizador (m/min)? ")
     tanque = entrada_float("Qual o tamanho do tanque do pulverizador (L)? ")
+    vazao_pulverizador = entrada_float("Qual a vazão do seu pulverizador do fabricante para aplicação do produto (L/min)? ") #vazão padrão de uma pulverizadora comercial pode virar input no futuro L/min
     num_pulverizadores = entrada_float("Quantos pulverizadores há no seu trator? ")
     espacadores = entrada_float("Qual é o espaçamento entre os pulverizadores em cm? ")
     qtd_recomendado = entrada_float("Qual a recomendação do fabricante para aplicação do produto (L/ha)? ")
-    vazao_pulverizador = 32 #vazão padrão de uma pulverizadora comercial pode virar input no futuro L/min
     dosagem,taxa_aplicacao = calcular_pulverizadores(tanque,qtd_recomendado, vazao_pulverizador,velocidade,num_pulverizadores,espacadores)  # Chamada para função específica
     fungicida_ha, total_fungicida = calcular_volume_fungicida(area,tanque,dosagem,taxa_aplicacao)
     
@@ -226,10 +226,10 @@ def atualizar_dados():
                 nome_produto = input("Qual o produto que será aplicado? ")
                 velocidade = entrada_float("Qual a velocidade média percorrida pelo pulverizador (m/min)? ")
                 tanque = entrada_float("Qual o tamanho do tanque do pulverizador (L)? ")
+                vazao_pulverizador = entrada_float("Qual a vazão do seu pulverizador do fabricante para aplicação do produto (L/min)? ") #vazão padrão de uma pulverizadora comercial pode virar input no futuro L/min
                 num_pulverizadores = entrada_float_opcional(f"Novo número de pulverizadores (Atual: {dados[indice]['insumos']['fungicida']['num_pulverizadores']}): ",dados[indice]['insumos']['fungicida']['num_pulverizadores'])
                 espacadores = entrada_float("Qual é o espaçamento entre os pulverizadores em cm? ")
                 qtd_recomendado = entrada_float("Qual a recomendação do fabricante para aplicação do produto (L/ha)? ")
-                vazao_pulverizador = 32 #vazão padrão de uma pulverizadora comercial pode virar input no futuro L/min
                                
 
                 # Recalcular volume e total de fungicida com os novos valores

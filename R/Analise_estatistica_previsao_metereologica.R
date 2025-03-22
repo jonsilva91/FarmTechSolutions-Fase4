@@ -70,6 +70,31 @@ cat("Média de Nitrogênio aplicado:", media_nitrogenio_milho, "kg/ha\n")
 cat("Média de Fósforo aplicado:", media_fosforo_milho, "kg/ha\n")
 cat("Média de Potássio aplicado:", media_potassio_milho, "kg/ha\n")
 
+# Desvio padrão para milho
+desvio_fungicida_ha_milho <- sd(dados_milho$insumos$fungicida$fungicida_ha, na.rm = TRUE)
+desvio_total_fungicida_milho <- sd(dados_milho$insumos$fungicida$total_fungicida, na.rm = TRUE)
+desvio_nitrogenio_milho <- sd(dados_milho$insumos$adubacao$nitrogênio, na.rm = TRUE)
+desvio_fosforo_milho <- sd(dados_milho$insumos$adubacao$fósforo, na.rm = TRUE)
+desvio_potassio_milho <- sd(dados_milho$insumos$adubacao$potássio, na.rm = TRUE)
+
+# Desvio padrão para soja
+desvio_fungicida_ha_soja <- sd(dados_soja$insumos$fungicida$fungicida_ha, na.rm = TRUE)
+desvio_total_fungicida_soja <- sd(dados_soja$insumos$fungicida$total_fungicida, na.rm = TRUE)
+desvio_p2o5_soja <- sd(dados_soja$insumos$adubacao$p2o5_total, na.rm = TRUE)
+desvio_k2o_soja <- sd(dados_soja$insumos$adubacao$k2o_total, na.rm = TRUE)
+
+cat("\n### Desvio Padrão dos Insumos - Soja ###\n")
+cat("Desvio padrão de fungicida aplicado por hectare:", desvio_fungicida_ha_soja, "L/ha\n")
+cat("Desvio padrão total de fungicida aplicado:", desvio_total_fungicida_soja, "L\n")
+cat("Desvio padrão total de P2O5 aplicado:", desvio_p2o5_soja, "kg/ha\n")
+cat("Desvio padrão total de K2O aplicado:", desvio_k2o_soja, "kg/ha\n")
+
+cat("\n### Desvio Padrão dos Insumos - Milho ###\n")
+cat("Desvio padrão de fungicida aplicado por hectare:", desvio_fungicida_ha_milho, "L/ha\n")
+cat("Desvio padrão total de fungicida aplicado:", desvio_total_fungicida_milho, "L\n")
+cat("Desvio padrão de Nitrogênio aplicado:", desvio_nitrogenio_milho, "kg/ha\n")
+cat("Desvio padrão de Fósforo aplicado:", desvio_fosforo_milho, "kg/ha\n")
+cat("Desvio padrão de Potássio aplicado:", desvio_potassio_milho, "kg/ha\n")
 
 #data frame para plotagem
 
@@ -122,28 +147,30 @@ previsao <- weather_forecast(cidade,
 
 
 # Exibir clima atual
+weather_dict <- c("Céu limpo", "Predominantemente ensolarado", "Parcialmente nublado", "Nublado")
 temperatura <- clima_atual$temperature
 vento <- clima_atual$windspeed
 condicao <- clima_atual$weathercode
+descricao_clima <- weather_dict[condicao + 1]
 
 cat("\n===== Clima Atual em", cidade, "=====\n")
 cat(" Temperatura:", temperatura, "°C\n")
 cat(" Velocidade do Vento:", vento, "km/h\n")
-cat(" Condição Climática:", condicao, "\n")
+cat(" Condição Climática:", descricao_clima, "\n")
 
 # Exibir previsão do tempo próximos 6 dias
-previsao_3dias <- previsao[1:6, ]
+previsao_6dias <- previsao[1:6, ]
 
 cat("\n### Previsão do Tempo para os Próximos 6 Dias ###\n")
 
-for (i in 1:nrow(previsao_3dias)) {
-  cat("\nData:", format(as.Date(previsao_3dias$date[i]), "%d/%m/%Y"), "\n")
-  cat(" Temp. Máx:", previsao_3dias$daily_temperature_2m_max[i], "°C\n")
-  cat(" Temp. Mín:", previsao_3dias$daily_temperature_2m_min[i], "°C\n")
-  cat(" Precipitação:", previsao_3dias$daily_precipitation_sum[i], "mm\n")
-  cat("Vento Máx:", previsao_3dias$daily_wind_speed_10m_max[i], "km/h\n")
-  cat("Duração do Sol:", round((previsao_3dias$daily_sunshine_duration[i]/3600),2), "horas\n")
-  cat("Umidade Máx:", previsao_3dias$daily_relative_humidity_2m_max[i], "%\n")
+for (i in 1:nrow(previsao_6dias)) {
+  cat("\nData:", format(as.Date(previsao_6dias$date[i]), "%d/%m/%Y"), "\n")
+  cat(" Temp. Máx:", previsao_6dias$daily_temperature_2m_max[i], "°C\n")
+  cat(" Temp. Mín:", previsao_6dias$daily_temperature_2m_min[i], "°C\n")
+  cat(" Precipitação:", previsao_6dias$daily_precipitation_sum[i], "mm\n")
+  cat("Vento Máx:", previsao_6dias$daily_wind_speed_10m_max[i], "km/h\n")
+  cat("Duração do Sol:", round((previsao_6dias$daily_sunshine_duration[i]/3600),2), "horas\n")
+  cat("Umidade Máx:", previsao_6dias$daily_relative_humidity_2m_max[i], "%\n")
   cat("------------------------\n")
 } 
 

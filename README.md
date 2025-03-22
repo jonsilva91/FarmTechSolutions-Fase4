@@ -423,6 +423,11 @@ ggplot(dados, aes(x = cultura, y = produtividade, fill = cultura)) +
 ```
 ![Boxplot de Produtividade](R/Analise_estatistica_previsao_metereologica_files/figure-html/unnamed-chunk-17-1.png)
 
+## 🎥 Vídeo Demonstração
+
+[![Assista ao vídeo](https://img.youtube.com/vi/SvARBqcmIGo/0.jpg)](https://youtu.be/SvARBqcmIGo)
+
+
 ## 🛠️ Futuras Melhorias
 **python**
 - [ ] Interface gráfica para facilitar a entrada e análise dos dados 📊
