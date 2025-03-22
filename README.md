@@ -197,17 +197,17 @@ Foi utilizado dois métodos um para a Soja e a outra para o Milho. Referente a s
 
    **Exemplo:** 10 plantas ao todo deram **200** vagens  
    - Média:  
-   $$
-   \frac{200}{10} = 20 \, vagens/planta
-   $$
+   
+   $\frac{200}{10} = 20 \, vagens/planta$
+   
 
 2. Contar o número de grãos nas vagens e dividir pelo número de vagens  
 
    **Exemplo:** 60 vagens ao todo deram **150** grãos  
    - Média:  
-   $$
-   \frac{150}{60} = 2,5 \, grãos/vagem
-   $$
+   
+   $\frac{150}{60} = 2,5 \, grãos/vagem$
+ 
 
 3. Olhar o peso de 1000 grãos para o híbrido utilizado  
 
