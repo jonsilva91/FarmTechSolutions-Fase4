@@ -190,24 +190,23 @@ $$
 
 ### Cálculo da Expectativa de Produtividade  
 
-
-Foi utilizado dois métodos um para a Soja e a outra para o Milho. Referente a soja, o precedimento é o seguinte: 
+Foi utilizado dois métodos um para a Soja e o outro para o Milho. Referente à soja, o procedimento é o seguinte:  
 
 1. Contar o número de vagens em 10 plantas consecutivas e dividir o resultado por 10  
 
    **Exemplo:** 10 plantas ao todo deram **200** vagens  
    - Média:  
-   
-   $\frac{200}{10} = 20 \, vagens/planta$
-   
+   $$
+   \frac{200}{10} = 20 \text{ vagens/planta}
+   $$
 
 2. Contar o número de grãos nas vagens e dividir pelo número de vagens  
 
    **Exemplo:** 60 vagens ao todo deram **150** grãos  
    - Média:  
-   
-   $\frac{150}{60} = 2,5 \, grãos/vagem$
- 
+   $$
+   \frac{150}{60} = 2.5 \text{ grãos/vagem}
+   $$
 
 3. Olhar o peso de 1000 grãos para o híbrido utilizado  
 
@@ -240,7 +239,10 @@ $$
 Para calcular a produtividade do milho, utilizamos a seguinte fórmula:  
 
 
-$\text{produtividade} = \frac{\left( \frac{\text{peso\_grãos}}{1000} \right) \times 60000}{1000}$
+$$
+\text{produtividade} = \frac{\left( \frac{\mathrm{peso\_grãos}}{1000} \right) \times 60000}{1000}
+$$
+
 
 #### Exemplo:   
 
