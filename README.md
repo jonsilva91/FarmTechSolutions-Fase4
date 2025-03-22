@@ -239,25 +239,24 @@ $$
 
 Para calcular a produtividade do milho, utilizamos a seguinte fórmula:  
 
-$$
-\text{produtividade} = \frac{\left( \frac{\text{peso\_grãos}}{1000} \right) \times 60000}{1000}
-$$
+
+$\text{produtividade} = \frac{\left( \frac{\text{peso\_grãos}}{1000} \right) \times 60000}{1000}$
 
 #### Exemplo:   
 
 Suponha que o peso médio de 1000 grãos seja **185 g**. Aplicamos a fórmula:  
 
-$$
-\text{produtividade} = \frac{\left( \frac{185}{1000} \right) \times 60000}{1000}
-$$
 
-$$
-\text{produtividade} = \frac{(0.185) \times 60000}{1000}
-$$
+$\text{produtividade} = \frac{\left( \frac{185}{1000} \right) \times 60000}{1000}$
 
-$$
-\text{produtividade} = \frac{11100}{1000} = 11.1 \, sc/ha
-$$
+
+
+$\text{produtividade} = \frac{(0.185) \times 60000}{1000}$
+
+
+
+$\text{produtividade} = \frac{11100}{1000} = 11.1 \, sc/ha$
+
 
 Neste exemplo, a produtividade esperada do milho seria **11,1 sacas por hectare**.
 
