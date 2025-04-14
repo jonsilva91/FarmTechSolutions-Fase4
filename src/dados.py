@@ -7,13 +7,13 @@ from validacao_dados import *
 
 
 def salvar_dados():
-    with open("./data/dados.json", "w") as f:
+    with open("./config/dados.json", "w") as f:
         json.dump(dados, f, indent=4)
 
 def carregar_dados():
     global dados
     try:
-        with open("./data/dados.json", "r") as f:
+        with open("./config/dados.json", "r") as f:
             dados = json.load(f)
     except FileNotFoundError:
         dados = []  

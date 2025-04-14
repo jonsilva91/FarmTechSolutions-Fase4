@@ -4,3 +4,7 @@
 .Rhistory
 .RData
 .Ruserdata
+**/*.localz
+**/*.local
+**/*.git
+**/*.DS_Store
