@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="99DF1A0D-A501-87E5-C2AD-7978312F260A" containerWithKeyObject="EEAE1643-7BCD-9A07-7C62-6769DADF9342" localFKIndex="827514BA-2A08-815A-1618-0F3F545257CF" name="fk_aplicacao_area">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>C9C33C24-0313-5E64-88E0-605F970CD9E7</importedID>
+<referredTableLongName>Area_Plantio</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5CD75B86-F3DA-4332-23FE-D910906DA771</referredTableID>
+<keyObject>BD8226E4-0AC1-E1A9-68EB-F2ADBC9DB58E</keyObject>
+<referredKeyID>BD8226E4-0AC1-E1A9-68EB-F2ADBC9DB58E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_area</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="953FBC24-507D-A43B-4E6D-4B1A6248CDAE" name="tb_aplicacao_insumo">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_aplicacao" id="2B99B405-C304-B4FC-AB48-B609B170EF8E">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_insumo" id="E318C5CA-E831-3497-7802-06A0001AD97C">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>31CA2720-5B07-A815-9E69-B0F0CA2DD616</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_insumo" id="4AD95C01-E903-BD2D-D8E7-A8BB529E9AA5">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D924ADD-B892-7676-BA2E-3C94CFCF549B" referredColumn="0A83A663-9C3A-07AC-FE82-56C1CE9D64DD"/>
+</associations>
+</Column>
+<Column name="cd_atividade" id="42A89E78-6313-FA02-20D1-6F614D6E6DB1">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A20462DE-3A07-CD07-3D72-79CF3BD369D6" referredColumn="6230143C-702B-0E02-8BA0-0CA885FCCDF5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="055CDEB1-7980-96E5-258F-B178F6C34E2C" name="tb_aplicacao_insumo_PK">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B99B405-C304-B4FC-AB48-B609B170EF8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C879E568-5CE2-B8B8-3762-7D21E8BA30B0" name="tb_aplicacao_insumo_tb_insumo_FK">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD95C01-E903-BD2D-D8E7-A8BB529E9AA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF6062EB-A2BA-3888-4629-1B6B858643A1" name="tb_aplicacao_insumo_tb_atividade_FK">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42A89E78-6313-FA02-20D1-6F614D6E6DB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

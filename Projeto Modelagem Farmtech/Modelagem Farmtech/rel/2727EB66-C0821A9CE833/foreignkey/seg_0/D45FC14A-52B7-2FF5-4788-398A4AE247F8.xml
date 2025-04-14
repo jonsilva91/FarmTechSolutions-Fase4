@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D45FC14A-52B7-2FF5-4788-398A4AE247F8" containerWithKeyObject="2EF174DF-AD46-B23E-138C-6B25EBEB3ED8" localFKIndex="BEDB0C4F-70E7-FB4B-82D7-C53C973AE779" name="tb_dado_sensor_tb_sensor_FK">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<referredTableLongName>tb_sensor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>562CBA33-6620-13B5-4ECC-13ED36A3090F</referredTableID>
+<keyObject>1DC7EED5-4D42-306B-3185-00994277C441</keyObject>
+<referredKeyID>1DC7EED5-4D42-306B-3185-00994277C441</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_sensor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

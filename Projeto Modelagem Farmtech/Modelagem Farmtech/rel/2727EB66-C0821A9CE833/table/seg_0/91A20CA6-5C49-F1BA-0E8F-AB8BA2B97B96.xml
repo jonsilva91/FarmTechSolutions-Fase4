@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91A20CA6-5C49-F1BA-0E8F-AB8BA2B97B96" name="tb_atividade">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_atividade" id="6230143C-702B-0E02-8BA0-0CA885FCCDF5">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_atividade" id="65444D2F-58AC-9C70-8975-370CDF424818">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8490385-0810-0C80-321B-B6E097FC4223</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_atividade" id="579363B4-798D-F608-FFF8-44196360FD39">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F78C527D-EE31-C131-62B7-95C32B2474C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_fase" id="6F5862FF-584C-5806-537F-1EDF01D451DB">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>90451CA1-AA40-5529-4BE6-D1F91FE587E9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cultura" id="326BCF6A-B065-41E5-80C4-011C84D560BB">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA375DA0-F2D5-7126-6F11-AB5EED192D92" referredColumn="6EA6316C-9723-C563-EA36-ECC314148B6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25C7BE6A-D742-6194-6AB4-865A829AE293" name="tb_atividade_PK">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6230143C-702B-0E02-8BA0-0CA885FCCDF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F462A072-96C8-9BED-7F76-EFDFC88D0E9E" name="tb_atividade_tb_cultura_FK">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="326BCF6A-B065-41E5-80C4-011C84D560BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="Sensor" directorySegmentName="seg_0" id="C2B8AB57-2823-103D-11E2-B7AD10E55001">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="tp_sensor" id="3681AC5A-994B-E84A-EA9B-800082CD23D7">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_sensor" id="38D885FC-A569-1558-29C0-F920032D5F3B">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nm_modelo" id="3F034466-F2C5-3FD8-4BAC-1640ABE7A099">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_area" id="71EC703C-F020-A195-C8DC-106260B1C7E9">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_sensor_area" id="F3ADA08D-2AD6-CCCA-49BF-EF2EC549C57C">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Sensor_PK" id="E4932CF1-8847-8E0C-E402-131CA4F56B1C">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

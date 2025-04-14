@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CD75B86-F3DA-4332-23FE-D910906DA771" name="Area_Plantio">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>F2AD4C22-9B4A-D104-D111-144A30FC256B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_area" id="E66F862A-7C70-1E4A-1D1C-2955F52552B4">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>D7301367-63CD-EEA5-1809-05AE786EAAD3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>13D30A81-7712-2348-0F27-AED2B5CB5974</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_area_ha" id="80AA61FB-48D7-5DBE-E7C3-68DE121A41BB">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>559220EF-1DCF-9776-9B12-0CF2DA14341D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A199B758-44CC-38E7-EFEE-9912235D9694</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cultura" id="FD1E0864-4D00-8602-D91F-DCFA529479B8">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>215E1254-AAC0-78A5-8AFE-3381B59B7BA7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>13D30A81-7712-2348-0F27-AED2B5CB5974</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="711FE85A-2987-4639-9DB6-0B17B8C5F0FF" referredColumn="605DB419-10D5-610D-1218-D78CDBBC8954"/>
+</associations>
+</Column>
+<Column name="vl_espacamento" id="88835C55-17AC-769D-A1BE-D7D1D0A591DF">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>07AF3476-E867-610D-AB4E-C12AB884F0A2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D2E5702-8942-910B-70B7-2C8AD395F81C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_densidade" id="034012D1-3233-F284-2371-1F08A0D5E8E8">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>CB31BBD9-184F-74F5-96BF-E0C7579DC7D9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D2E5702-8942-910B-70B7-2C8AD395F81C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_taxa_semeadura" id="4BDD3500-937B-BA3E-1A17-403C7CC7BB5A">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>BC25B130-B7CD-49D0-97C2-296AA3BEF3F5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D2E5702-8942-910B-70B7-2C8AD395F81C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_peso_ha" id="8786685D-E353-CE2D-12B9-A04DD48EF386">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>8E8068CF-72AC-07AC-61AF-EF3DD9B03089</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A199B758-44CC-38E7-EFEE-9912235D9694</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD8226E4-0AC1-E1A9-68EB-F2ADBC9DB58E" name="Area_Plantio_PK">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>6B3C41E7-A70C-9913-2F18-D6573AC92F3F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E66F862A-7C70-1E4A-1D1C-2955F52552B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6C160A9-86C4-E45C-07AD-A06B95E4D4BF" name="fk_area_cultura">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD1E0864-4D00-8602-D91F-DCFA529479B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

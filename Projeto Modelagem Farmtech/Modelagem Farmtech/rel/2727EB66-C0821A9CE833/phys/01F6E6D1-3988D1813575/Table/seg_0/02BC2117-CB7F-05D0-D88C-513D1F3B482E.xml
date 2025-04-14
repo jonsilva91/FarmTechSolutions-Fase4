@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="tb_uso_maquinario" directorySegmentName="seg_0" id="02BC2117-CB7F-05D0-D88C-513D1F3B482E">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cd_maquinario" id="29CBE69F-9337-2251-7187-B9DCB0F673BA">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="qt_horas" id="37A7360C-B225-80C5-826E-27AAE3D7E901">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_atividade" id="BCE7FC6B-9766-93D9-9618-E41C568FC256">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_uso" id="F17B12F0-DAA3-BCD3-03A0-CAD8430EFA5D">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tb_uso_maquinario_tb_maquinario_FK" id="4CE824BC-0F2B-A343-F742-DC62F8B2174D">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tb_uso_maquinario_tb_atividade_FK" id="ED787C6E-7ABF-E0DE-B912-81C46D153C4C">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tb_uso_maquinario_PK" id="2DC7DE29-4209-86C7-7203-E6977786F84F">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

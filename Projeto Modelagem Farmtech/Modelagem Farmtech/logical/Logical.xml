@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6EF016A7-B948-519B-D6FB-2C037EA21047" mainViewID="2C15CA7C-56BB-4140-A4E5-DB6B231680E1">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:25:30 UTC</createdTime>
+<ownerDesignName>Modelo_farmtech_importado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

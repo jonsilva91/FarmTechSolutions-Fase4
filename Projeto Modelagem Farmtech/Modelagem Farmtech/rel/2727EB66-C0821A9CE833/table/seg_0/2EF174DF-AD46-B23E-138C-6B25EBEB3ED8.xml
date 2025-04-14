@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EF174DF-AD46-B23E-138C-6B25EBEB3ED8" name="tb_dado_sensor">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_dado_sensor" id="71B80D7C-F47F-440F-672D-E6F727CC6402">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_dado" id="A532F347-1FBF-3DF0-FD82-06291EA5CC33">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>31CA2720-5B07-A815-9E69-B0F0CA2DD616</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_coleta" id="13B7389B-385B-191E-E593-C48A5701D4DC">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>DBCC3CD2-7A52-9F4D-6A14-B48B5EC24FBB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_sensor" id="7AACCFF4-24B0-16DA-7D61-BC56EC9C0219">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>177E2FEF-BCE7-2107-EDA5-7D1A4191E92B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D45FC14A-52B7-2FF5-4788-398A4AE247F8" referredColumn="5101638A-E5AF-D208-9FC6-5EB10CBC605F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92D01A1D-09B6-B76E-B2F3-81B7F1AFBEA9" name="tb_dado_sensor_PK">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71B80D7C-F47F-440F-672D-E6F727CC6402"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEDB0C4F-70E7-FB4B-82D7-C53C973AE779" name="tb_dado_sensor_tb_sensor_FK">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AACCFF4-24B0-16DA-7D61-BC56EC9C0219"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

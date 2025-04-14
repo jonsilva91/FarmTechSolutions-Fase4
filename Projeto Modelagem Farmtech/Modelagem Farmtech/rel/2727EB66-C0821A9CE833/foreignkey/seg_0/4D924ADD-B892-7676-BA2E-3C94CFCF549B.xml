@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4D924ADD-B892-7676-BA2E-3C94CFCF549B" containerWithKeyObject="953FBC24-507D-A43B-4E6D-4B1A6248CDAE" localFKIndex="C879E568-5CE2-B8B8-3762-7D21E8BA30B0" name="tb_aplicacao_insumo_tb_insumo_FK">
+<sourceDDLFile>modelo_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-08 08:46:17 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<referredTableLongName>tb_insumo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A6AF8069-076C-FE83-CCC0-4F0924A89E61</referredTableID>
+<keyObject>2010B544-3A7E-EA21-1760-437C70E51C9E</keyObject>
+<referredKeyID>2010B544-3A7E-EA21-1760-437C70E51C9E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_insumo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

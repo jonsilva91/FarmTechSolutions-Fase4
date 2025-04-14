@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="tb_dado_sensor" directorySegmentName="seg_0" id="2EF174DF-AD46-B23E-138C-6B25EBEB3ED8">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="dt_coleta" id="13B7389B-385B-191E-E593-C48A5701D4DC">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_dado_sensor" id="71B80D7C-F47F-440F-672D-E6F727CC6402">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_sensor" id="7AACCFF4-24B0-16DA-7D61-BC56EC9C0219">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vl_dado" id="A532F347-1FBF-3DF0-FD82-06291EA5CC33">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tb_dado_sensor_tb_sensor_FK" id="BEDB0C4F-70E7-FB4B-82D7-C53C973AE779">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tb_dado_sensor_PK" id="92D01A1D-09B6-B76E-B2F3-81B7F1AFBEA9">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:34:55 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61B9395A-6589-3FD9-8D04-07DE7407665C" name="Cultura">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>D252C950-6EF3-0FE7-2218-CCD7846E06DC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cultura" id="605DB419-10D5-610D-1218-D78CDBBC8954">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>A930F5FC-AA97-6744-AC1B-E4AFD21AC350</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>13D30A81-7712-2348-0F27-AED2B5CB5974</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cultura" id="6E910A58-6D57-0643-C861-67B038B9FFEC">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>31D45834-A6E2-8611-8E94-E7122E558750</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C8490385-0810-0C80-321B-B6E097FC4223</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_cultura" id="5B8E12E5-AEFB-3149-CD3F-42DE50A6662A">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>EE6397F9-8507-946C-6166-633572E3D669</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>90451CA1-AA40-5529-4BE6-D1F91FE587E9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5607023-73F1-CDE7-4389-4A4DC4A92026" name="Cultura_PK">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>102A19D2-3BB5-765C-6806-FDC8AC7AF22D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="605DB419-10D5-610D-1218-D78CDBBC8954"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF0A17FF-F9BB-C98F-4AE3-E0A073FCA081" name="Responsavel_Area">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>36C0EB25-6A56-376E-B854-79654F4BCA47</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_responsavel" id="27927F42-30BB-A6F6-9654-2F6C286E6326">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>D6476619-7FB2-5C20-86D9-62D1C0594B70</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>13D30A81-7712-2348-0F27-AED2B5CB5974</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F4E66C1-E4FA-A17B-CC8B-65F27361C14C" referredColumn="E3C70C13-7EB7-D485-D9B3-22B3A3B5D8DB"/>
+</associations>
+</Column>
+<Column name="cd_area" id="548A2869-E836-CEAB-707F-C9D33BA0861B">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>DE8C8033-CFA9-8D76-5026-B923768D5D20</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>13D30A81-7712-2348-0F27-AED2B5CB5974</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B26FA26-43DD-4F3E-5922-F84F5A77051F" referredColumn="E66F862A-7C70-1E4A-1D1C-2955F52552B4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50C92CBA-B41A-534A-82C1-FBE1C50994AE" name="pk_responsavel_area">
+<sourceDDLFile>modelagem_farmtech.sql</sourceDDLFile>
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<importedID>5F5F90D4-9A99-A958-63A3-0AA12BE43B22</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27927F42-30BB-A6F6-9654-2F6C286E6326"/>
+<colUsage columnID="548A2869-E836-CEAB-707F-C9D33BA0861B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="173B75DB-802C-2BB0-8377-343D7F8CBCC7" name="fk_responsavel_area_area">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="548A2869-E836-CEAB-707F-C9D33BA0861B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A3D60F2-DF29-4618-A239-76BE9763BB9B" name="fk_responsavel_area_responsavel">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 16:35:33 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27927F42-30BB-A6F6-9654-2F6C286E6326"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

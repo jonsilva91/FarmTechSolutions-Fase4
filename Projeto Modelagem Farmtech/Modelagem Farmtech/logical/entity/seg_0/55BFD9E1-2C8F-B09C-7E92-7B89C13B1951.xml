@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="55BFD9E1-2C8F-B09C-7E92-7B89C13B1951" name="T_LEITURA_SENSOR">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 17:17:59 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<engineerTo>
+<item key="1BBD00EE-104C-88FF-8CD9-7B3EBC569CA6" value="true"/>
+<item key="2727EB66-E085-40FD-9CA7-C0821A9CE833" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>LEITURA_SENSOR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_leitura" id="0B0F6648-8618-7D4F-4464-0C7D5AE0F41E">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 17:18:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária
+]]></commentInRDBMS>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<engineerTo>
+<item key="1BBD00EE-104C-88FF-8CD9-7B3EBC569CA6" value="true"/>
+<item key="2727EB66-E085-40FD-9CA7-C0821A9CE833" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_sensor	" id="61AE7632-E281-A4BA-B7F3-39CA88450D21">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 17:18:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK para relacionar com sensor
+]]></commentInRDBMS>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<engineerTo>
+<item key="1BBD00EE-104C-88FF-8CD9-7B3EBC569CA6" value="true"/>
+<item key="2727EB66-E085-40FD-9CA7-C0821A9CE833" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_leitura	" id="49902247-39C7-945F-CE23-C87DDCB80ED8">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 17:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Momento da leitura 
+]]></commentInRDBMS>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<engineerTo>
+<item key="1BBD00EE-104C-88FF-8CD9-7B3EBC569CA6" value="true"/>
+<item key="2727EB66-E085-40FD-9CA7-C0821A9CE833" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_valor" id="E654E491-CD52-DB3A-8BE9-07D8F37F7DED">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 17:19:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor capturado pelo sensor
+]]></commentInRDBMS>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<engineerTo>
+<item key="1BBD00EE-104C-88FF-8CD9-7B3EBC569CA6" value="true"/>
+<item key="2727EB66-E085-40FD-9CA7-C0821A9CE833" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7C5B5674-E902-8433-E619-E62D8C68C1B6" name="T_LEITURA_SENSOR PK">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-14 17:18:38 UTC</createdTime>
+<ownerDesignName>Modelagem Farmtech</ownerDesignName>
+<engineerTo>
+<item key="1BBD00EE-104C-88FF-8CD9-7B3EBC569CA6" value="true"/>
+<item key="2727EB66-E085-40FD-9CA7-C0821A9CE833" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B0F6648-8618-7D4F-4464-0C7D5AE0F41E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
