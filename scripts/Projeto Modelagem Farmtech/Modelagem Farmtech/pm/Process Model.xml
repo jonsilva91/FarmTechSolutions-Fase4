@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="A0D6312D-7A37-E2DA-4B2A-4718A8E7AACF">
-<createdBy>jonasdasilva</createdBy>
-<createdTime>2025-04-08 08:25:30 UTC</createdTime>
-<ownerDesignName>Modelo_farmtech_importado</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</ProcessModel>
