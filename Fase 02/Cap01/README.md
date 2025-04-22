@@ -11,15 +11,15 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/in/joão-vitor-severo-oliveira-87904134b/">João Vitor Severo Oliveira</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Jonas Luis da Silva</a>
-- <a href="https://www.linkedin.com/in/renan-francisco-de-paula-b3320915b/">Renan Francisco de Paula</a> 
+- <a href="https://www.linkedin.com/in/joão-vitor-severo-oliveira-87904134b/">João Vitor Severo Oliveira rm566251</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Jonas Luis da Silva rm561465</a>
+- <a href="https://www.linkedin.com/in/renan-francisco-de-paula-b3320915b/">Renan Francisco de Paula rm561454</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Lucas Gomes Moreira</a>
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">ANDRÉ GODOI CHIOVATO</a>
 
 
 ## 📜 Descrição
@@ -65,7 +65,6 @@ O modelo é composto por entidades como:
 - `Leitura_Sensor`
 - `Aplicacao`
 - `Responsavel`
-- `Responsavel_Area` (associativa)
 
 Cada entidade possui atributos específicos que descrevem os dados essenciais para controle e análise. A **cardinalidade de cada relacionamento** foi modelada com base nas regras de negócio extraídas do cenário real:
 
@@ -77,6 +76,26 @@ O modelo também contempla **atributos compostos e multivalorados**, como:
 
 - **Telefone:** pode conter diferentes números para um mesmo responsável.
 - **Nome:** pode ser decomposto em nome e sobrenome.
+
+### 📘 MER (Modelo Entidade-Relacionamento)
+
+Todos os detalhes do modelo conceitual (MER), incluindo os atributos, cardinalidades mínimas e máximas, classificações (chave primária, estrangeira, composta ou multivalorada), bem como os relacionamentos entre as entidades, estão documentados no arquivo abaixo:
+
+📄 [MER_farmtech.pdf](document/MER_farmtech.pdf)
+
+Esse arquivo também traz o mapeamento completo conforme as regras de negócio levantadas, além de uma explicação clara de cada entidade e suas relações.
+
+### 🖼️ Visão gráfica do MER
+Abaixo, uma versão simplificada do diagrama conceitual para visualização rápida:
+
+![](assets/MER.png)
+
+### 🖼️ Visão gráfica do DER Lógico e Relacional
+Abaixo, a versão do diagrama lógico e relacional para visualização rápida:
+
+![](assets/DER_Logical.png)
+![](assets/DER_Relational.png)
+
 
 ## ✅ Conclusão
 
@@ -92,13 +111,13 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>.github</b>: Pasta utilizada para armazenar arquivos de configuração específicos do GitHub, como templates de issues, pull requests e workflows de CI/CD. Atualmente, está preparada para conter templates de relatórios de problemas e sugestões de melhoria no projeto, facilitando a padronização das contribuições.
 
-- <b>assets</b>: Contém todos os recursos visuais do projeto, como o diagrama conceitual MER (MER.png), o diagrama físico DER (diagrama_DER.png) e logo FIAP (logo-fiap.png).
+- <b>assets</b>: Contém todos os recursos visuais do projeto, como o diagrama conceitual MER (MER.png), o diagrama físico DER (DER_logico.png e DER_Relational.png) e logo FIAP (logo-fiap.png).
 
-- <b>config</b>: Armazena arquivos técnicos e de configuração do projeto. Aqui está incluído o modelo de banco relacional exportado do SQL Developer (Modelo_Farmtech_importado.dmd), fundamental para a construção do DER.
+- <b>config</b>: Armazena arquivos técnicos e de configuração do projeto. Aqui está incluído o modelo de banco relacional exportado do SQL Developer (modeloder.dmd), fundamental para a construção do DER.
 
 - <b>document</b>: Diretório onde ficam os documentos oficiais do projeto. Contém os arquivos MER_farmtech.pdf e Regras_de_Negocio.pdf, que representam a modelagem conceitual e o levantamento das regras de negócio, respectivamente. A subpasta other/ pode conter materiais auxiliares como resumos de artigos ou rascunhos.
 
-- <b>scripts</b>: Esta pasta pode conter scripts auxiliares para tarefas de automação, backup, deploy ou integração de dados. (Atualmente está vazia, mas preparada para uso futuro.)
+- <b>scripts</b>: Esta pasta pode conter scripts auxiliares para tarefas de automação, backup, deploy ou integração de dados. Nele se encontra o arquivo DDL de script SQL.
 
 - <b>src</b>: Contém todo o código-fonte do projeto. Inclui os arquivos Python responsáveis pela manipulação de dados (main.py, interface.py, calculos.py etc.), bem como os arquivos de dados utilizados pelo sistema, como o dados.json localizado em src/data/. Também pode conter scripts em R para análises estatísticas, agrupados em src/R/.
 
@@ -113,15 +132,9 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🗃 Histórico de lançamentos
 
-* 0.5.0 - XX/XX/2024
+* 0.2.0 - 22/04/2025
     * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
+* 0.1.0 - 25/03/2025
     *
 
 ## 📋 Licença

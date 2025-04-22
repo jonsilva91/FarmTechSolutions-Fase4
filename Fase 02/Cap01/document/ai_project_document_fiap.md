@@ -10,9 +10,9 @@
 
 #### Nomes dos integrantes do grupo
 
-- Jonas Silva  
-- João Severo  
-- Renan Francisco
+- João Vitor Severo Oliveira rm566251
+- Jonas Luis da Silva rm561465
+- Renan Francisco de Paula rm561454
 
 ## Sumário
 
@@ -172,12 +172,8 @@ O projeto atendeu aos objetivos propostos e criou uma base sólida para expansã
 ### 📘 MER (Modelo Entidade-Relacionamento)
 
 - [📄 MER_farmtech.pdf](document/MER_farmtech.pdf)
-- ![Diagrama MER](assets/MER.png)
+
 
 ### 📑 Regras de Negócio
 
 - [📄 Regras_de_Negocio.pdf](document/Regras_de_Negocio.pdf)
-
-### 🗂️ DER (Diagrama Entidade-Relacionamento)
-
-- ![Diagrama DER](assets/diagrama_DER.png)
