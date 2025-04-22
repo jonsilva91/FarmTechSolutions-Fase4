@@ -129,6 +129,21 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - O arquivo `dados.json` contém os dados utilizados nos cálculos de produtividade e aplicação.
 - Para modelagem e edição do DER, foi utilizado o **Oracle SQL Developer Data Modeler**.
 
+### 1. Clone o repositório:
+```bash
+git clone https://github.com/jonsilva91/Farmtech/tree/main/Fase%2002/Cap01
+```
+### 2. Execute o sistema:
+```bash
+python main.py
+```
+#### 🧭 Como abrir o arquivo `modeloder.dmd` no Oracle SQL Developer Data Modeler
+
+1. Abra o **Oracle SQL Developer Data Modeler**.
+2. No menu superior, clique em **File > Open**.
+3. Navegue até a pasta `config` do projeto.
+4. Selecione o arquivo `modeloder.dmd`.
+5. Clique em **Open** para visualizar o modelo relacional.
 
 ## 🗃 Histórico de lançamentos
 
