@@ -131,7 +131,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ### 1. Clone o repositório:
 ```bash
-git clone https://github.com/jonsilva91/Farmtech/tree/main/Fase%2002/Cap01
+git clone https://github.com/jonsilva91/Farmtech/
 ```
 ### 2. Execute o sistema:
 ```bash
