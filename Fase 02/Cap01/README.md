@@ -148,9 +148,10 @@ python main.py
 ## 🗃 Histórico de lançamentos
 
 * 0.2.0 - 22/04/2025
-    * 
+    * Projeto de modelagem de dados finalizado com regras de negócio, MER, Diagrama conceitual, lógico e relacional gerados através do Oracle data modeler. Script sql gerado com o mesmo programa. 
 * 0.1.0 - 25/03/2025
-    *
+    * Projeto finalizado com inserção, edição, visualização e deleção de dados agrícolas e seus respectivos cálculos.
+
 
 ## 📋 Licença
 
