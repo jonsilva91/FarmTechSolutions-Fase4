@@ -11,9 +11,9 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/in/joão-vitor-severo-oliveira-87904134b/">João Vitor Severo Oliveira rm566251</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Jonas Luis da Silva rm561465</a>
-- <a href="https://www.linkedin.com/in/renan-francisco-de-paula-b3320915b/">Renan Francisco de Paula rm561454</a> 
+- <a href="https://www.linkedin.com/in/joão-vitor-severo-oliveira-87904134b/">João Vitor Severo Oliveira -rm566251</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Jonas Luis da Silva - rm561465</a>
+- <a href="https://www.linkedin.com/in/renan-francisco-de-paula-b3320915b/">Renan Francisco de Paula - rm561454</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
