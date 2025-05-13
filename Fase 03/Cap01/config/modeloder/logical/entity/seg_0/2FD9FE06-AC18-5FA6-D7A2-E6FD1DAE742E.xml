@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2FD9FE06-AC18-5FA6-D7A2-E6FD1DAE742E" name="Cultura">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-20 20:32:28 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cultura" id="1EFFA040-3C9F-F615-9594-96CD26DA7E52">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 14:59:25 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cultura" id="3C615FB7-DC0C-CD15-1F33-97675C590252">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-20 20:34:07 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_cultura" id="E56C421E-BA76-D25F-B460-8329C5C1F641">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-20 20:34:27 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9B64D43E-B24B-4EC0-1EFE-C5F2A6E49A84" name="Cultura PK">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 14:50:45 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EFFA040-3C9F-F615-9594-96CD26DA7E52</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

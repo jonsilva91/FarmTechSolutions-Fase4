@@ -1,0 +1,224 @@
+[
+    {
+        "cultura": "soja",
+        "area": 100.0,
+        "densidade": 12.0,
+        "espacamento": 0.4,
+        "taxa_semeadura": 15.0,
+        "peso_por_hectare": 82500.00000000001,
+        "produtividade": 68.75,
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio) sendo que o Nitr\u00f4genio \u00e9 obtido da pr\u00f3pria planta",
+                "p_resina": 7.0,
+                "k_trocavel": 0.1,
+                "estimativa_producao": 4.0,
+                "p2o5_total": 50,
+                "k2o_total": 80
+            },
+            "fungicida": {
+                "nome": "Morfolina",
+                "dosagem": 6.0,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 29.999999999999996,
+                "total_fungicida": 20.000000000000004
+            }
+        }
+    },
+    {
+        "cultura": "milho",
+        "area": 314.1592653589793,
+        "densidade": 3.0,
+        "espacamento": 0.5,
+        "taxa_semeadura": 3.3333333333333335,
+        "peso_por_hectare": 20533.333333333336,
+        "produtividade": 22.8,
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio)",
+                "nitrog\u00eanio": 195,
+                "f\u00f3sforo": 105,
+                "pot\u00e1ssio": 145,
+                "estimativa_producao": 5.0
+            },
+            "fungicida": {
+                "nome": "Estrobirulina",
+                "dosagem": 29.999999999999996,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 29.999999999999996,
+                "total_fungicida": 314.1592653589793
+            }
+        }
+    },
+    {
+        "cultura": "soja",
+        "area": 600.0,
+        "densidade": 12.0,
+        "espacamento": 0.4,
+        "taxa_semeadura": 15.0,
+        "peso_por_hectare": 82500.00000000001,
+        "produtividade": "N\u00e3o foi previsto produtividade para essa cultura",
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio) sendo que o Nitr\u00f4genio \u00e9 obtido da pr\u00f3pria planta",
+                "p_resina": 7.0,
+                "k_trocavel": 2.0,
+                "estimativa_producao": 8.0,
+                "p2o5_total": 50,
+                "k2o_total": 60
+            },
+            "fungicida": {
+                "nome": "Morfolina",
+                "dosagem": 14.999999999999998,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 29.999999999999996,
+                "total_fungicida": 300.0
+            }
+        }
+    },
+    {
+        "cultura": "milho",
+        "area": 400.0,
+        "densidade": 3.0,
+        "espacamento": 0.5,
+        "taxa_semeadura": 3.75,
+        "peso_por_hectare": 31350.0,
+        "produtividade": 16.8,
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio)",
+                "nitrog\u00eanio": 192,
+                "f\u00f3sforo": 136,
+                "pot\u00e1ssio": 49,
+                "estimativa_producao": 8.0
+            },
+            "fungicida": {
+                "nome": "Estrobulina",
+                "dosagem": 75.0,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 37.5,
+                "total_fungicida": 800.0
+            }
+        }
+    },
+    {
+        "cultura": "soja",
+        "area": 314.1592653589793,
+        "densidade": 12.0,
+        "espacamento": 0.4,
+        "taxa_semeadura": 15.0,
+        "peso_por_hectare": 82500.00000000001,
+        "produtividade": 68.75,
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio) sendo que o Nitr\u00f4genio \u00e9 obtido da pr\u00f3pria planta",
+                "p_resina": 10.0,
+                "k_trocavel": 2.0,
+                "estimativa_producao": 9.0,
+                "p2o5_total": 50,
+                "k2o_total": 60
+            },
+            "fungicida": {
+                "nome": "Morfolina",
+                "dosagem": 154.6875,
+                "num_pulverizadores": 50.0,
+                "fungicida_ha": 61.875,
+                "total_fungicida": 785.3981633974482
+            }
+        }
+    },
+    {
+        "cultura": "milho",
+        "area": 300.0,
+        "densidade": 3.0,
+        "espacamento": 0.5,
+        "taxa_semeadura": 3.3333333333333335,
+        "peso_por_hectare": 146666.6666666667,
+        "produtividade": "N\u00e3o foi previsto produtividade para essa cultura",
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio)",
+                "nitrog\u00eanio": 120,
+                "f\u00f3sforo": 85,
+                "pot\u00e1ssio": 31,
+                "estimativa_producao": 5.0
+            },
+            "fungicida": {
+                "nome": "Estrobulina",
+                "dosagem": 29.999999999999996,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 29.999999999999996,
+                "total_fungicida": 300.0
+            }
+        }
+    },
+    {
+        "cultura": "milho",
+        "area": 25.0,
+        "densidade": 3.0,
+        "espacamento": 0.5,
+        "taxa_semeadura": 3.260869565217391,
+        "peso_por_hectare": 21521.73913043478,
+        "produtividade": 20.4,
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio)",
+                "nitrog\u00eanio": 195,
+                "f\u00f3sforo": 105,
+                "pot\u00e1ssio": 145,
+                "estimativa_producao": 5.0
+            },
+            "fungicida": {
+                "nome": "Estrobulina",
+                "dosagem": 44.47265625,
+                "num_pulverizadores": 30.0,
+                "fungicida_ha": 29.6484375,
+                "total_fungicida": 37.5
+            }
+        }
+    },
+    {
+        "cultura": "soja",
+        "area": 47.5,
+        "densidade": 12.0,
+        "espacamento": 0.4,
+        "taxa_semeadura": 15.0,
+        "peso_por_hectare": 82500.00000000001,
+        "produtividade": 36.88,
+        "insumos": {
+            "adubacao": {
+                "tipo": "NPK (Nitrog\u00eanio, F\u00f3sforo, Pot\u00e1ssio) sendo que o Nitr\u00f4genio \u00e9 obtido da pr\u00f3pria planta",
+                "p_resina": 7.0,
+                "k_trocavel": 2.0,
+                "estimativa_producao": 5.0,
+                "p2o5_total": 50,
+                "k2o_total": 60
+            },
+            "fungicida": {
+                "nome": "Morfolina",
+                "dosagem": 13.406250000000002,
+                "num_pulverizadores": 30.0,
+                "fungicida_ha": 26.812500000000004,
+                "total_fungicida": 23.75
+            }
+        }
+    },
+    {
+        "cultura": "soja",
+        "area": 55000.0,
+        "densidade": 12.0,
+        "espacamento": 0.4,
+        "taxa_semeadura": 15.0,
+        "peso_por_hectare": 82500.00000000001,
+        "produtividade": "N\u00e3o foi previsto produtividade para essa cultura",
+        "insumos": {
+            "fungicida": {
+                "nome": "Morfolina",
+                "dosagem": 14.999999999999998,
+                "num_pulverizadores": 40.0,
+                "fungicida_ha": 29.999999999999996,
+                "total_fungicida": 27500.0
+            }
+        }
+    }
+]

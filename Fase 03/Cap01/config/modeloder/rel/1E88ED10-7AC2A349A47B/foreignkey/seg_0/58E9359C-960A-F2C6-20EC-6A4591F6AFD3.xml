@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58E9359C-960A-F2C6-20EC-6A4591F6AFD3" containerWithKeyObject="1E1F7ECA-A098-405D-F222-32216F7FFEEB" localFKIndex="5D540835-64D1-DEF5-2265-3F951EEB90C5" name="FK_Area_Plantio_Responsavel">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>103EA0BC-D4E4-87B6-381E-97731BA26B7F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<referredTableLongName>Responsavel</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>831F766C-1D9D-E5C2-47BE-759721D59233</referredTableID>
+<keyObject>C6BD373B-A1D6-2376-B63D-93C884634628</keyObject>
+<referredKeyID>C6BD373B-A1D6-2376-B63D-93C884634628</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_responsavel</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
