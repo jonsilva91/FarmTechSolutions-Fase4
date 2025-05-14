@@ -1,4 +1,3 @@
-import math
 from interface import menu
 
 # Vetores para armazenar os dados
@@ -20,5 +19,3 @@ if __name__ == '__main__':
     
     # Inicia o programa
     menu()
-
-
