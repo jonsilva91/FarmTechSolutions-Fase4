@@ -4,7 +4,7 @@ from dados import entrada_dados, listar_dados, atualizar_dados, deletar_dados
 
 def menu():
     while True:
-        print("\n=== Sistema de Monitoramento Agrícola ===")
+        print("\n=== Sistema de Monitoramento Agrícola ===\n")
         print("1. Inserir nova cultura")
         print("2. Listar culturas")
         print("3. Atualizar área")
