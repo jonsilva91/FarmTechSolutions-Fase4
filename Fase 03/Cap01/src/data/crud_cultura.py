@@ -22,14 +22,17 @@ def listar_culturas_com_area(cursor):
             a.vl_densidade,
             a.vl_taxa_semeadura,
             a.vl_peso_ha,
-            a.ds_produtividade
+            a.ds_produtividade,
+            a.cd_area
         FROM Cultura c
         JOIN Area_Plantio a ON c.cd_cultura = a.cd_cultura
     """)
     return cursor.fetchall()
 
-def atualizar_area(cursor, id_cultura, nova_area):
-    cursor.execute("UPDATE Cultura SET vl_area = :1 WHERE cd_cultura = :2", (nova_area, id_cultura))
+def atualizar_area(cursor, nova_area, cd_cultura):
+    sql = "UPDATE Area_Plantio SET vl_area_ha = :1 WHERE cd_cultura = :2"
+    cursor.execute(sql, (nova_area, cd_cultura))
+
 
 def deletar_cultura(cursor, id_cultura):
     cursor.execute("DELETE FROM Cultura WHERE cd_cultura = :1", (id_cultura,))
