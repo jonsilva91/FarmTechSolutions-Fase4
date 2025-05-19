@@ -78,14 +78,67 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="vl_fosforo" id="D2F208D6-9D8E-B389-CFE6-C138F767D492">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:28:48 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_potassio" id="EE3A3D87-62C0-AF48-D9A9-FF33740F34C8">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:30:07 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_nitrogenio" id="EF35A997-4740-1802-ECE1-6B38C0ADD8FB">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:30:29 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_produto" id="F2E9DC29-EAFE-BF1C-3DD6-AB26A0A6DBA2">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:30:48 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B3C116E7-2039-D97A-F9E9-D8BEAF7950BA" name="Aplicacao PK">
 <createdBy>joao.oliveira</createdBy>
 <createdTime>2025-04-21 15:07:00 UTC</createdTime>
 <ownerDesignName>modeloder</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

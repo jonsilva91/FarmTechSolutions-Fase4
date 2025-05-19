@@ -68,6 +68,54 @@
 <colAssociation fkAssociation="D09A54B5-4900-A848-A4E5-CDEF86351CBE" referredColumn="B4A99DCF-8784-2A22-5182-554443B36F0C"/>
 </associations>
 </Column>
+<Column name="vl_fosforo" id="A1AC9D56-73D0-C4DE-E9A0-1ABE1CD4FBFC">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>D2F208D6-9D8E-B389-CFE6-C138F767D492</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_potassio" id="FA3890E2-971C-620E-102F-3E84384919AD">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>EE3A3D87-62C0-AF48-D9A9-FF33740F34C8</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_nitrogenio" id="ABFDA2C7-C0B3-0C14-0E44-8445815ED9F8">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>EF35A997-4740-1802-ECE1-6B38C0ADD8FB</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_produto" id="CFA5D909-5EE5-0C83-585A-09011CA1A68D">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>F2E9DC29-EAFE-BF1C-3DD6-AB26A0A6DBA2</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3A6FAEBC-F661-5FCB-A38A-3A8383A806ED" name="PK_Aplicacao">

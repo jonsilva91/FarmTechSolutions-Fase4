@@ -5,158 +5,75 @@
 
 
 
-DROP TABLE Aplicacao CASCADE CONSTRAINTS 
-;
 
-DROP TABLE Area_Plantio CASCADE CONSTRAINTS 
-;
 
-DROP TABLE Cultura CASCADE CONSTRAINTS 
-;
+-- Criação da tabela Cultura
+CREATE TABLE Cultura (
+    cd_cultura INTEGER NOT NULL,
+    nm_cultura VARCHAR2(50) NOT NULL,
+    tp_cultura VARCHAR2(50) NOT NULL,
+    CONSTRAINT PK_Cultura PRIMARY KEY (cd_cultura)
+);
 
-DROP TABLE Leitura_Sensor CASCADE CONSTRAINTS 
-;
+-- Criação da tabela Responsavel
+CREATE TABLE Responsavel (
+    cd_responsavel INTEGER NOT NULL,
+    nm_responsavel VARCHAR2(50) NOT NULL,
+    nm_telefone VARCHAR2(50) NOT NULL,
+    nm_email VARCHAR2(50) NOT NULL,
+    CONSTRAINT PK_Responsavel PRIMARY KEY (cd_responsavel)
+);
 
-DROP TABLE Responsavel CASCADE CONSTRAINTS 
-;
+-- Criação da tabela Area_Plantio
+CREATE TABLE Area_Plantio (
+    cd_area INTEGER NOT NULL,
+    vl_area_ha FLOAT NOT NULL,
+    vl_espacamento FLOAT NOT NULL,
+    vl_densidade FLOAT NOT NULL,
+    vl_taxa_semeadura FLOAT NOT NULL,
+    vl_peso_ha FLOAT NOT NULL,
+    cd_cultura INTEGER NOT NULL,
+    cd_responsavel INTEGER NOT NULL,
+    CONSTRAINT PK_Area_Plantio PRIMARY KEY (cd_area),
+    CONSTRAINT FK_Area_Plantio_Cultura FOREIGN KEY (cd_cultura) REFERENCES Cultura(cd_cultura),
+    CONSTRAINT FK_Area_Plantio_Responsavel FOREIGN KEY (cd_responsavel) REFERENCES Responsavel(cd_responsavel)
+);
 
-DROP TABLE Sensor CASCADE CONSTRAINTS 
-;
+-- Criação da tabela Sensor
+CREATE TABLE Sensor (
+    cd_sensor INTEGER NOT NULL,
+    tp_sensor VARCHAR2(50) NOT NULL,
+    nm_modelo VARCHAR2(50) NOT NULL,
+    cd_area INTEGER NOT NULL,
+    CONSTRAINT PK_Sensor PRIMARY KEY (cd_sensor),
+    CONSTRAINT FK_Sensor_Area_Plantio FOREIGN KEY (cd_area) REFERENCES Area_Plantio(cd_area)
+);
 
--- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+-- Criação da tabela Leitura_Sensor
+CREATE TABLE Leitura_Sensor (
+    cd_leitura INTEGER NOT NULL,
+    dt_leitura DATE NOT NULL,
+    vl_valor FLOAT,
+    cd_sensor INTEGER NOT NULL,
+    CONSTRAINT PK_Leitura_Sensor PRIMARY KEY (cd_leitura, cd_sensor),
+    CONSTRAINT FK_Leitura_Sensor_Sensor FOREIGN KEY (cd_sensor) REFERENCES Sensor(cd_sensor)
+);
 
--- predefined type, no DDL - XMLTYPE
+-- Criação da tabela Aplicacao com novos campos para P, K, N e produto
+CREATE TABLE Aplicacao (
+    cd_aplicacao INTEGER NOT NULL,
+    dt_aplicacao DATE NOT NULL,
+    tp_aplicacao VARCHAR2(50) NOT NULL,
+    vl_quantidade FLOAT,
+    vl_fosforo FLOAT,
+    vl_potassio FLOAT,
+    vl_nitrogenio FLOAT,
+    ds_produto VARCHAR2(100),
+    cd_area INTEGER NOT NULL,
+    CONSTRAINT PK_Aplicacao PRIMARY KEY (cd_aplicacao),
+    CONSTRAINT FK_Aplicacao_Area_Plantio FOREIGN KEY (cd_area) REFERENCES Area_Plantio(cd_area)
+);
 
-CREATE TABLE Aplicacao 
-    ( 
-     cd_aplicacao  INTEGER  NOT NULL , 
-     dt_aplicacao  DATE  NOT NULL , 
-     tp_aplicacao  VARCHAR2 (50)  NOT NULL , 
-     vl_quantidade FLOAT  NOT NULL , 
-     cd_area       INTEGER  NOT NULL 
-    ) 
-;
-
-ALTER TABLE Aplicacao 
-    ADD CONSTRAINT PK_Aplicacao PRIMARY KEY ( cd_aplicacao ) ;
-
-CREATE TABLE Area_Plantio 
-    ( 
-     cd_area           INTEGER  NOT NULL , 
-     vl_area_ha        FLOAT  NOT NULL , 
-     vl_espacamento    FLOAT  NOT NULL , 
-     vl_densidade      FLOAT  NOT NULL , 
-     vl_taxa_semeadura FLOAT  NOT NULL , 
-     vl_peso_ha        FLOAT  NOT NULL , 
-     cd_cultura        INTEGER  NOT NULL , 
-     cd_responsavel    INTEGER  NOT NULL 
-    ) 
-;
-
-ALTER TABLE Area_Plantio 
-    ADD CONSTRAINT PK_Area_Plantio PRIMARY KEY ( cd_area ) ;
-
-CREATE TABLE Cultura 
-    ( 
-     cd_cultura INTEGER  NOT NULL , 
-     nm_cultura VARCHAR2 (50)  NOT NULL , 
-     tp_cultura VARCHAR2 (50)  NOT NULL 
-    ) 
-;
-
-ALTER TABLE Cultura 
-    ADD CONSTRAINT PK_Cultura PRIMARY KEY ( cd_cultura ) ;
-
-CREATE TABLE Leitura_Sensor 
-    ( 
-     cd_leitura INTEGER  NOT NULL , 
-     dt_leitura DATE  NOT NULL , 
-     vl_valor   FLOAT , 
-     cd_sensor  INTEGER  NOT NULL 
-    ) 
-;
-
-ALTER TABLE Leitura_Sensor 
-    ADD CONSTRAINT PK_Leitura_Sensor PRIMARY KEY ( cd_leitura, cd_sensor ) ;
-
-CREATE TABLE Responsavel 
-    ( 
-     cd_responsavel INTEGER  NOT NULL , 
-     nm_responsavel VARCHAR2 (50)  NOT NULL , 
-     nm_telefone    VARCHAR2 (50)  NOT NULL , 
-     nm_email       VARCHAR2 (50)  NOT NULL 
-    ) 
-;
-
-ALTER TABLE Responsavel 
-    ADD CONSTRAINT PK_Responsavel PRIMARY KEY ( cd_responsavel ) ;
-
-CREATE TABLE Sensor 
-    ( 
-     cd_sensor INTEGER  NOT NULL , 
-     tp_sensor VARCHAR2 (50)  NOT NULL , 
-     nm_modelo VARCHAR2 (50)  NOT NULL , 
-     cd_area   INTEGER  NOT NULL 
-    ) 
-;
-
-ALTER TABLE Sensor 
-    ADD CONSTRAINT PK_Sensor PRIMARY KEY ( cd_sensor ) ;
-
-ALTER TABLE Aplicacao 
-    ADD CONSTRAINT FK_Aplicacao_Area_Plantio FOREIGN KEY 
-    ( 
-     cd_area
-    ) 
-    REFERENCES Area_Plantio 
-    ( 
-     cd_area
-    ) 
-;
-
-ALTER TABLE Area_Plantio 
-    ADD CONSTRAINT FK_Area_Plantio_Cultura FOREIGN KEY 
-    ( 
-     cd_cultura
-    ) 
-    REFERENCES Cultura 
-    ( 
-     cd_cultura
-    ) 
-;
-
-ALTER TABLE Area_Plantio 
-    ADD CONSTRAINT FK_Area_Plantio_Responsavel FOREIGN KEY 
-    ( 
-     cd_responsavel
-    ) 
-    REFERENCES Responsavel 
-    ( 
-     cd_responsavel
-    ) 
-;
-
-ALTER TABLE Leitura_Sensor 
-    ADD CONSTRAINT FK_Leitura_Sensor_Sensor FOREIGN KEY 
-    ( 
-     cd_sensor
-    ) 
-    REFERENCES Sensor 
-    ( 
-     cd_sensor
-    ) 
-;
-
-ALTER TABLE Sensor 
-    ADD CONSTRAINT FK_Sensor_Area_Plantio FOREIGN KEY 
-    ( 
-     cd_area
-    ) 
-    REFERENCES Area_Plantio 
-    ( 
-     cd_area
-    ) 
-;
 
 
 

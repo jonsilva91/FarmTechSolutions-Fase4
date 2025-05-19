@@ -1,7 +1,12 @@
+import os
+from dotenv import load_dotenv
 import requests
 
-API_KEY = "4efac73e8eea8a8692866acad5ab867d"
-CIDADE = "Jundiai,BR"
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+CIDADE = os.getenv("CIDADE")
+
 
 def obter_dados_climaticos():
     """

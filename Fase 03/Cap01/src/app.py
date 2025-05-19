@@ -34,7 +34,8 @@ try:
     if not culturas:
         st.warning("Nenhuma cultura cadastrada.")
     else:
-        cultura_opcoes = {f"{c[1].capitalize()} (Área: {c[3]} ha)": c for c in culturas}
+        cultura_opcoes = {
+    f"{c[1].capitalize()} - Área {c[9]} ({c[3]} ha)": c for c in culturas}
         cultura_selecionada = st.selectbox("Selecione a cultura / área:", list(cultura_opcoes.keys()))
         cultura_dados = cultura_opcoes[cultura_selecionada]
         cd_area = cultura_dados[9]
