@@ -1,33 +1,27 @@
 from datetime import datetime
 
-def inserir_fungicida(cursor, cd_area, quantidade_total):
+def inserir_fungicida(cursor, cd_area, quantidade_total, nome_produto):
     """
     Registra uma aplicação de fungicida na tabela Aplicacao.
-
-    Args:
-        cursor: Cursor Oracle.
-        cd_area: Código da área de plantio.
-        quantidade_total: Quantidade total (em L) de fungicida aplicado.
     """
     sql = """
         INSERT INTO Aplicacao (
-            cd_aplicacao, dt_aplicacao, tp_aplicacao, vl_quantidade, cd_area
+            cd_aplicacao, dt_aplicacao, tp_aplicacao,
+            vl_quantidade, nm_produto, cd_area
         ) VALUES (
             (SELECT NVL(MAX(cd_aplicacao), 0) + 1 FROM Aplicacao),
             TO_DATE(:1, 'YYYY-MM-DD HH24:MI:SS'),
-            'fungicida', :2, :3
+            'fungicida', :2, :3, :4
         )
     """
-    data_aplicacao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    cursor.execute(sql, (data_aplicacao, quantidade_total, cd_area))
+    data = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cursor.execute(sql, (data, quantidade_total, nome_produto, cd_area))
 
 
 def listar_fungicidas(cursor):
-    """
-    Lista todas as aplicações de fungicida.
-    """
     cursor.execute("""
-        SELECT cd_aplicacao, dt_aplicacao, vl_quantidade, cd_area
+        SELECT cd_aplicacao, dt_aplicacao, vl_quantidade,
+               nm_produto, cd_area
         FROM Aplicacao
         WHERE tp_aplicacao = 'fungicida'
         ORDER BY dt_aplicacao DESC
@@ -35,24 +29,18 @@ def listar_fungicidas(cursor):
     return cursor.fetchall()
 
 
-def atualizar_fungicida(cursor, cd_aplicacao, nova_quantidade):
-    """
-    Atualiza a quantidade aplicada de um fungicida específico.
-    """
+def atualizar_fungicida(cursor, cd_aplicacao, nova_quantidade, nome_produto):
     sql = """
         UPDATE Aplicacao
-        SET vl_quantidade = :1
-        WHERE cd_aplicacao = :2 AND tp_aplicacao = 'fungicida'
+        SET vl_quantidade = :1,
+            nm_produto = :2
+        WHERE cd_aplicacao = :3 AND tp_aplicacao = 'fungicida'
     """
-    cursor.execute(sql, (nova_quantidade, cd_aplicacao))
+    cursor.execute(sql, (nova_quantidade, nome_produto, cd_aplicacao))
 
 
 def deletar_fungicida(cursor, cd_aplicacao):
-    """
-    Remove um registro de aplicação de fungicida da tabela Aplicacao.
-    """
-    sql = """
+    cursor.execute("""
         DELETE FROM Aplicacao
         WHERE cd_aplicacao = :1 AND tp_aplicacao = 'fungicida'
-    """
-    cursor.execute(sql, (cd_aplicacao,))
+    """, (cd_aplicacao,))

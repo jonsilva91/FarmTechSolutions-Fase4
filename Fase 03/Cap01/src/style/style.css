@@ -1,0 +1,22 @@
+/* Oculta menu e rodapé */
+header, footer, .st-emotion-cache-18ni7ap {
+    visibility: hidden;
+}
+
+/* Ajusta fundo branco transparente para seções */
+.section {
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex: auto;
+}
+
+#dashboard-de-monitoramento-agricola{
+  overflow-y: hidden;
+  background-color: rgba(255, 255, 255, 0.90);
+  color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
