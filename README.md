@@ -6,9 +6,9 @@ Projeto acadêmico desenvolvido na FIAP com foco em agricultura de precisão, se
 
 Este repositório está organizado da seguinte forma:
 
-- 📁 [Fase 01](Fase_01/README.md): Modelagem inicial, requisitos e proposta do sistema
-- 📁 [Fase 02](Fase_02/README.md): Criação do banco de dados relacional (MER/DER)
-- 📁 [Fase 03](Fase_03/README.md): Integração com ESP32, leitura de sensores, dashboard interativo, API climática
+- 📁 [Fase 01](Fase_01//Cap01/README.md): Modelagem inicial, requisitos e proposta do sistema
+- 📁 [Fase 02](Fase_02//Cap01/README.md): Criação do banco de dados relacional (MER/DER)
+- 📁 [Fase 03](Fase_03/Cap01/README.md): Integração com ESP32, leitura de sensores, dashboard interativo, API climática
 
 ## 🎬 Demonstração (Fase 03)
 
