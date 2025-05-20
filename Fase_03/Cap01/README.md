@@ -474,6 +474,7 @@ streamlit run app.py
   - CRUD completo
   - Dashboard com Streamlit
   - Aplicações modeladas com NPK e produto
+  - Coleta de dados (simulados) via sensores e ESP32
 
 * **0.2.0 - 22/04/2025**
   - Modelagem finalizada com regras de negócio, MER e DER
