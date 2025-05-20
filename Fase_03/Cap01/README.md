@@ -75,10 +75,6 @@ O modelo foi adaptado para comportar aplicações com valores individuais de fó
 
 📄 [MER_farmtech.pdf](document/MER_farmtech.pdf)
 
----
-
-### 🖼️ Visão gráfica do MER
-![](assets/MER.png)
 
 ---
 
