@@ -58,17 +58,34 @@ try:
         # 📊 Leituras lado a lado
         st.markdown("## 📊 Leituras de Sensores")
         leituras = obter_leituras_por_area(cursor, cd_area)
+
         if leituras:
             df = pd.DataFrame(leituras, columns=["Tipo", "Data", "Valor"])
             df["Data"] = pd.to_datetime(df["Data"])
+            df["Tipo"] = df["Tipo"].str.strip().str.lower()  # <- normaliza o tipo
 
             tipos = df["Tipo"].unique()
             colunas = st.columns(len(tipos))
 
             for idx, tipo in enumerate(tipos):
                 df_tipo = df[df["Tipo"] == tipo]
+        
+                # Nome formatado para exibição
+                if tipo == "ph":
+                    titulo = "pH"
+                elif tipo == "fosforo":
+                    titulo = "Fósforo"
+                elif tipo == "potassio":
+                    titulo = "Potássio"
+                elif tipo == "nitrogenio":
+                    titulo = "Nitrogênio"
+                elif tipo == "umidade":
+                    titulo = "Umidade"
+                else:
+                    titulo = tipo.capitalize()
+
                 with colunas[idx]:
-                    st.markdown(f"#### {tipo.capitalize()}")
+                    st.markdown(f"#### {titulo}")
                     fig, ax = plt.subplots(figsize=(4, 3))
                     ax.plot(df_tipo["Data"], df_tipo["Valor"], marker="o", linewidth=1)
                     ax.set_xticks(df_tipo["Data"][::max(1, len(df_tipo)//4)])
@@ -81,6 +98,8 @@ try:
             st.warning("Nenhuma leitura registrada.")
 
         st.markdown("---")
+
+
 
         # 🧪 Aplicações
         st.markdown("## 🧪 Aplicações")

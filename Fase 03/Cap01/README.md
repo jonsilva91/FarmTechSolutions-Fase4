@@ -325,7 +325,7 @@ A seção seguinte apresenta **gráficos de linha**, agrupados por tipo de senso
 - pH
 - Fósforo (P)
 - Potássio (K)
-- Nitrogênio (N)
+- Nitrogênio (N) (pronto para receber o cálculo, foi suprimido devido ao ESP32 ter apenas os dados P e K)
 
 Cada gráfico é gerado a partir dos dados da tabela `Leitura_Sensor` e é atualizado automaticamente conforme a seleção do usuário.
 
@@ -376,19 +376,49 @@ A modelagem segue as **boas práticas de banco de dados relacional** e represent
 
 ---
 
-## 📁 Estrutura de pastas
+## 📁 Estrutura de Pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>assets</b>: Contém os recursos visuais do projeto, como o diagrama MER (MER.png), os diagramas DER (DER_Logical.png e DER_Relational.png) e a logo da FIAP.  
-- <b>config</b>: Arquivos técnicos e de modelagem. Contém o modelo relacional exportado do Oracle SQL Developer (`modeloder.dmd`).  
-- <b>document</b>: Documentos oficiais do projeto, como `MER_farmtech.pdf` e `Regras_de_Negocio.pdf`.  
-- <b>scripts</b>: Contém o script SQL para criação do banco de dados.  
-- <b>src</b>: Código-fonte Python do sistema.
-  - `main.py`, `app.py`, `interface.py`, `calculos.py`, `dados.py`, entre outros.
-  - `/data/`: CRUDs e `dados.json`.
-  - `/style/`: Estilos para o dashboard.
-- <b>README.md</b>: Este arquivo, contendo todas as instruções do projeto.
+- **`assets/`**: Contém os recursos visuais do projeto, como:
+  - Diagrama MER: `MER.png`
+  - Diagrama DER lógico e relacional: `DER_Logical.png`, `DER_Relational.png`
+  - Logo da FIAP: `logo-fiap.png`
+  - Imagem do circuito ESP32 montado no Wokwi: `circuito_esp32.png`
+  - GIF demonstrativo do dashboard em funcionamento: `demo.gif`
+  - Imagem exportada do Wokwi com montagem dos sensores, relé e LED: `circuito_esp32.png`
+
+- **`config/`**: Arquivos técnicos e de modelagem, incluindo:
+  - Modelo relacional exportado do Oracle SQL Developer: `modeloder.dmd`
+
+- **`document/`**: Documentação oficial do projeto:
+  - `MER_farmtech.pdf`: modelo conceitual
+  - `Regras_de_Negocio.pdf`: levantamento de regras do sistema
+  - Subpasta `other/`: materiais auxiliares
+
+- **`scripts/`**: Contém scripts de automação e banco de dados:
+  - `Script_Farmtech.sql`: script SQL para criação de todas as tabelas e constraints
+
+- **`src/`**: Código-fonte principal do sistema:
+  - `main.py`: Menu principal de interação via terminal
+  - `app.py`: Interface interativa com Streamlit (dashboard)
+  - `interface.py`: Funções auxiliares de entrada/saída
+  - `calculos.py`: Cálculos técnicos (ex: produtividade)
+  - `dados.py`: Funções gerais de listagem
+  - `irrigar.py`: Módulo que simula controle da irrigação, com lógica comentada para integração com ESP32
+
+- **`src/data/`**:
+  - CRUDs SQL por entidade: `crud_cultura.py`, `crud_fungicida.py`, `crud_adubacao.py`, etc.
+  - `dados.json`: base de dados simulada
+
+- **`src/style/`**:
+  - `style.css`: Arquivo de estilos visuais para o dashboard Streamlit
+
+- **`esp32/`**: 
+  - `esp32_control.ino` ou `main.cpp`: código C/C++ do ESP32 para controle do sistema
+
+- **`README.md`**: Este arquivo. Contém todas as instruções do projeto, estrutura, execução, e demonstrações.
+
 
 ---
 
