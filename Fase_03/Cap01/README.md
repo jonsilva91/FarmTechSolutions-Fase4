@@ -363,7 +363,7 @@ Esses dados vêm da tabela `Aplicacao`, que armazena tanto os valores de nutrien
 
 > O dashboard foi pensado como uma ferramenta de apoio à **tomada de decisão agronômica baseada em dados**.
 
-### Demonstração do dashboard em video
+### Demonstração do dashboard em GIF
 
 ![Demonstração do dashboard](assets/demo.gif)
 
