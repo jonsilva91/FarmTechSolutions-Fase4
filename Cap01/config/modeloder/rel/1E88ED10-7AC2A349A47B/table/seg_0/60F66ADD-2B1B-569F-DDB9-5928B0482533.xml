@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60F66ADD-2B1B-569F-DDB9-5928B0482533" name="Leitura_Sensor">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>9D5FFD31-C979-5F8A-A862-B7610A1DB003</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_leitura" id="298753A2-D611-FA75-09CF-0AED1B0B032E">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>84AC077D-A2E7-F6CC-76C6-85A65F6A169C</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_leitura" id="B23CD4D9-EC5C-5BBE-EFF3-B9F1EDDE6168">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>1ED83B5A-4592-BE6D-1A96-9CDA548DF25C</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_valor" id="36C2B889-D239-A13F-74E6-93998EC3DF77">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>501A036B-1C70-33D8-A434-06C9259BDFCE</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_sensor" id="A1972699-345B-F492-3AAB-A93F710490AC">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>418E66A5-B38D-9124-18CC-DEEC8DBDDCBB</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4E1C497-18B8-3CA1-3B11-52F68410AD5C" referredColumn="7B99FE7F-6753-AB36-57DC-AE46454CC134"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EEE7D1D0-6995-F0B6-82A3-3C332FDA9B8A" name="PK_Leitura_Sensor">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>07CE125F-6819-A03A-246A-86E7EFB6F67E</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="298753A2-D611-FA75-09CF-0AED1B0B032E"/>
+<colUsage columnID="A1972699-345B-F492-3AAB-A93F710490AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="338242E2-3551-9CCB-E393-899BE0BD1BD6" name="FK_Leitura_Sensor_Sensor">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>71CBD16D-4D18-B872-532A-C0584C3F4052</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1972699-345B-F492-3AAB-A93F710490AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0777FC1-06E7-F790-AB7F-66E6AFC3FD50" name="Area_Plantio">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:38:52 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_area" id="78B0FAF8-11AA-FB80-60C4-1D5112CA26A4">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:39:13 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_area_ha" id="903306A6-EDB1-201B-9FA6-D93DA7FE4774">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:39:29 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_espacamento" id="3DF77F79-67AE-90DD-A2F5-BBB9E0CBD68F">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:39:46 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_densidade" id="3F6F65A2-02AE-7905-EF76-43AC5FAB017F">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:40:06 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_taxa_semeadura" id="0057DB0B-37BE-EEBE-F020-938A8D3B3AF6">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:41:21 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_peso_ha" id="00962B98-2A54-44BF-B1FE-04D91CC692A7">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:40:35 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cultura" id="FB4B7958-D7D2-78C1-8EB1-3CA9E0EA0FC4">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:42:22 UTC</createdTime>
+<generatorID>F0C24DD5-9BB0-03DA-327F-911E23400B8D</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<referedAttribute>1EFFA040-3C9F-F615-9594-96CD26DA7E52</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_responsavel" id="E040AA8D-EF02-B8D5-20E4-DD145730740F">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:00:22 UTC</createdTime>
+<generatorID>103EA0BC-D4E4-87B6-381E-97731BA26B7F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="true"/>
+</engineerTo>
+<referedAttribute>56D9CE1D-84E2-55A4-8FA7-74DE1921D5EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A53C271A-E271-71B9-DF23-89FD6DAC3B3A" name="Area_Planti PK">
+<createdBy>joao.oliveira</createdBy>
+<createdTime>2025-04-21 15:39:20 UTC</createdTime>
+<ownerDesignName>modeloder</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E88ED10-B098-A619-ADDE-7AC2A349A47B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>78B0FAF8-11AA-FB80-60C4-1D5112CA26A4</newElementsIDs>
+<usedAttributes>
+<attributeRef>78B0FAF8-11AA-FB80-60C4-1D5112CA26A4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

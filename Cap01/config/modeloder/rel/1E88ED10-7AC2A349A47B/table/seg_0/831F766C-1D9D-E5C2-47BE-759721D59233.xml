@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="831F766C-1D9D-E5C2-47BE-759721D59233" name="Responsavel">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>7D23399B-82B2-38AE-7FD6-C73E8DC8C5CA</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_responsavel" id="6AC28FD0-8E26-D7C1-32DD-01B4CF4B087C">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>56D9CE1D-84E2-55A4-8FA7-74DE1921D5EA</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_responsavel" id="B3119F0B-AD35-D5B5-195B-1EE0A947E3DF">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>8CBB0732-F16D-7C50-479E-084216396182</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_telefone" id="DD2EEAF5-CCEB-EE49-E673-687846DA619D">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>0E55CD72-6620-5D08-68F0-18F2AF3C5A20</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_email" id="705F0CE8-C361-B3DA-2665-2F2C75EA60FD">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>D898632E-235E-9EED-5D7E-0D5BCB6EDF89</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6BD373B-A1D6-2376-B63D-93C884634628" name="PK_Responsavel">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>50751ACA-7898-4B49-251D-5BFC41F34286</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AC28FD0-8E26-D7C1-32DD-01B4CF4B087C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

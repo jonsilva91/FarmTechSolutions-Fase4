@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E1F7ECA-A098-405D-F222-32216F7FFEEB" name="Area_Plantio">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>D0777FC1-06E7-F790-AB7F-66E6AFC3FD50</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_area" id="B4A99DCF-8784-2A22-5182-554443B36F0C">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>78B0FAF8-11AA-FB80-60C4-1D5112CA26A4</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_area_ha" id="2367CE37-79ED-37E0-7820-03AF1704FFC1">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>903306A6-EDB1-201B-9FA6-D93DA7FE4774</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_espacamento" id="CEF40228-4727-6335-3AA1-9FF461BE857A">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>3DF77F79-67AE-90DD-A2F5-BBB9E0CBD68F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_densidade" id="F2A123D0-05B1-67A9-EE1F-5910CBDFE347">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>3F6F65A2-02AE-7905-EF76-43AC5FAB017F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_taxa_semeadura" id="A8D88509-5448-0982-5403-793AB3C7811A">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>0057DB0B-37BE-EEBE-F020-938A8D3B3AF6</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_peso_ha" id="FDE3DE26-DF4C-DBBF-5FBC-92FA6A044C20">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>00962B98-2A54-44BF-B1FE-04D91CC692A7</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cultura" id="90E7AC9F-0F5D-6DCB-C49E-6CA046A4CE43">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>FB4B7958-D7D2-78C1-8EB1-3CA9E0EA0FC4</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCA25708-AEDC-9FB9-9912-EA7778F61E07" referredColumn="EB0A11EA-6C3D-9740-94EA-3D59585D0966"/>
+</associations>
+</Column>
+<Column name="cd_responsavel" id="9CF334EB-7BE0-56BF-804D-CAF35E6D299E">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>E040AA8D-EF02-B8D5-20E4-DD145730740F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58E9359C-960A-F2C6-20EC-6A4591F6AFD3" referredColumn="6AC28FD0-8E26-D7C1-32DD-01B4CF4B087C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B439252-EF1E-479F-DA8C-29E5D916E0B3" name="PK_Area_Plantio">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>A53C271A-E271-71B9-DF23-89FD6DAC3B3A</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4A99DCF-8784-2A22-5182-554443B36F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACCD00CD-2BB5-CA4F-F151-2F71E1244503" name="FK_Area_Plantio_Cultura">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>F0C24DD5-9BB0-03DA-327F-911E23400B8D</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90E7AC9F-0F5D-6DCB-C49E-6CA046A4CE43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D540835-64D1-DEF5-2265-3F951EEB90C5" name="FK_Area_Plantio_Responsavel">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>103EA0BC-D4E4-87B6-381E-97731BA26B7F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CF334EB-7BE0-56BF-804D-CAF35E6D299E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

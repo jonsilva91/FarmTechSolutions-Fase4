@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A151615-5765-C299-DBF6-2E730C90C818" name="Aplicacao">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>8DCD4C8D-FFE4-9F04-B964-5D33248FFDBF</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_aplicacao" id="58A2288B-15A2-ABD4-D221-B7E152233A23">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>FF16C2E0-3F68-CABF-5F2E-55FA58B1C08D</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_aplicacao" id="210C7180-35B5-1B30-3C82-88BC32E664D2">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>E5E854D8-26C6-B5E8-F28A-A8FAC9661BB1</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_aplicacao" id="618F48B8-21FF-B53F-4C9E-ABE4C6EE9F47">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>0497FEC7-C378-D0A6-7F04-C022B911D2AE</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_quantidade" id="70A33A1E-D32C-0EEC-1722-A550E78BCF9A">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>0959CE4D-2A1C-BAB2-2EAB-80FD67B87DBA</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_area" id="631F3E32-BE32-8761-897D-BD07B5351AAB">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>8AF0D5AF-C4F5-C850-6D6B-72F82D42F4CC</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D09A54B5-4900-A848-A4E5-CDEF86351CBE" referredColumn="B4A99DCF-8784-2A22-5182-554443B36F0C"/>
+</associations>
+</Column>
+<Column name="vl_fosforo" id="A1AC9D56-73D0-C4DE-E9A0-1ABE1CD4FBFC">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>D2F208D6-9D8E-B389-CFE6-C138F767D492</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_potassio" id="FA3890E2-971C-620E-102F-3E84384919AD">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>EE3A3D87-62C0-AF48-D9A9-FF33740F34C8</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_nitrogenio" id="ABFDA2C7-C0B3-0C14-0E44-8445815ED9F8">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>EF35A997-4740-1802-ECE1-6B38C0ADD8FB</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_produto" id="CFA5D909-5EE5-0C83-585A-09011CA1A68D">
+<createdBy>JonasLuisdaSilva</createdBy>
+<createdTime>2025-05-19 22:31:19 UTC</createdTime>
+<generatorID>F2E9DC29-EAFE-BF1C-3DD6-AB26A0A6DBA2</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A6FAEBC-F661-5FCB-A38A-3A8383A806ED" name="PK_Aplicacao">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>B3C116E7-2039-D97A-F9E9-D8BEAF7950BA</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58A2288B-15A2-ABD4-D221-B7E152233A23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71551E50-53BC-B9F8-7527-4DB15D89D1FC" name="FK_Aplicacao_Area_Plantio">
+<createdBy>jonasdasilva</createdBy>
+<createdTime>2025-04-22 08:10:42 UTC</createdTime>
+<generatorID>CF813F62-72EE-AAD1-6D19-548D55B75E0F</generatorID>
+<ownerDesignName>modeloder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="631F3E32-BE32-8761-897D-BD07B5351AAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
