@@ -1,18 +1,29 @@
-from dotenv import load_dotenv
-import os
-import oracledb
+from pathlib import Path
+import sqlite3
 
-load_dotenv()  # Carrega variáveis do .env
+# Caminho para o banco SQLite
+DB_PATH = Path(__file__).parent.parent / "config" / "farmtech.db"
 
-class OracleDB:
+
+class SQLiteDB:
     def __init__(self):
-        self.conn = oracledb.connect(
-            user=os.getenv("ORACLE_USER"),
-            password=os.getenv("ORACLE_PASSWORD"),
-            dsn=os.getenv("ORACLE_DSN")
-        )
+        # Conecta ao banco SQLite e configura row_factory para acesso por coluna
+        self.conn = sqlite3.connect(DB_PATH)
+        self.conn.row_factory = sqlite3.Row
+        self.conn.execute("PRAGMA foreign_keys = ON;")
         self.cursor = self.conn.cursor()
 
     def fechar(self):
+        """
+        Fecha o cursor e a conexão com o banco de dados.
+        """
         self.cursor.close()
         self.conn.close()
+
+    def __enter__(self):
+        # Permite uso em with-statement
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        # Garante fechamento ao sair do with-statement
+        self.fechar()
